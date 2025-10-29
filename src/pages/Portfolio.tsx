@@ -9,7 +9,6 @@ import Box from "@mui/material/Box";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Code, Boxes } from "lucide-react";
-
 import CardProject from "../components/CardProject";
 import TechStackIcon from "../components/TechStackIcon";
 
@@ -160,7 +159,7 @@ export default function PortfolioTabs() {
     const displayedProjects = showAllProjects ? projects : projects.slice(0, initialItems);
 
     return (
-        <div className="md:px-[10%] px-[5%] w-full sm:mt-0 mt-[3rem] bg-[#030014] overflow-hidden" id="Portfolio">
+        <div className="md:px-[10%] px-[5%] w-full sm:mt-0 mt-[3rem] bg-transparent px-[2%] sm:px-0 overflow-hidden" id="Portfolio">
             <div className="text-center pb-10" data-aos="fade-up">
                 <h2 className="text-3xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#6366f1] to-[#a855f7]">
                     Mes Projets & Compétences

@@ -136,7 +136,7 @@ const Home: React.FC = () => {
 
     return (
         <div
-            className="min-h-screen bg-[#030014] overflow-hidden px-[5%] sm:px-[5%] lg:px-[10%]"
+            className="min-h-screen bg-transparent px-[2%] sm:px-0 overflow-hidden px-[5%] sm:px-[5%] lg:px-[10%]"
             id="Home"
         >
             <div

@@ -1,17 +1,13 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useState } from "react";
 import LandingPage from "./pages/LandingPage";
+import ProjectDetails from "./components/ProjectDetail";
 
 function App() {
-  const [showWelcome, setShowWelcome] = useState(false);
-
   return (
     <BrowserRouter>
       <Routes>
-        <Route
-          path="/"
-          element={<LandingPage showWelcome={showWelcome} setShowWelcome={setShowWelcome} />}
-        />
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/project/:id" element={<ProjectDetails />} />
       </Routes>
     </BrowserRouter>
   );
