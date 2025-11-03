@@ -4,7 +4,7 @@ import ProjectDetails from "./components/ProjectDetail";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/my-portfolio">
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/project/:id" element={<ProjectDetails />} />

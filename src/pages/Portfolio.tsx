@@ -127,21 +127,23 @@ const projects: Project[] = [
 ];
 
 // 🔹 Tech Stack
+const base = import.meta.env.BASE_URL;
+
 const techStacks: Tech[] = [
-    { iconUrl: "/html.svg", language: "HTML" },
-    { iconUrl: "/css.svg", language: "CSS" },
-    { iconUrl: "/javascript.svg", language: "JavaScript" },
-    { iconUrl: "/Sass.svg", language: "Sass" },
-    { iconUrl: "/tailwind.svg", language: "Tailwind CSS" },
-    { iconUrl: "/bootstrap.svg", language: "Bootstrap" },
-    { iconUrl: "/reactjs.svg", language: "ReactJS" },
-    { iconUrl: "/Threejs.svg", language: "Three.js" },
-    { iconUrl: "/nodejs.svg", language: "Node.js" },
-    { iconUrl: "/PHP.svg", language: "PHP" },
-    { iconUrl: "/mysql.svg", language: "MySQL" },
-    { iconUrl: "/mongodb.svg", language: "MongoDb" },
-    { iconUrl: "/docker.svg", language: "Docker" },
-    { iconUrl: "/figma.svg", language: "Figma" },
+  { iconUrl: `${base}html.svg`, language: "HTML" },
+  { iconUrl: `${base}css.svg`, language: "CSS" },
+  { iconUrl: `${base}javascript.svg`, language: "JavaScript" },
+  { iconUrl: `${base}Sass.svg`, language: "Sass" },
+  { iconUrl: `${base}tailwind.svg`, language: "Tailwind CSS" },
+  { iconUrl: `${base}bootstrap.svg`, language: "Bootstrap" },
+  { iconUrl: `${base}reactjs.svg`, language: "ReactJS" },
+  { iconUrl: `${base}Threejs.svg`, language: "Three.js" },
+  { iconUrl: `${base}nodejs.svg`, language: "Node.js" },
+  { iconUrl: `${base}PHP.svg`, language: "PHP" },
+  { iconUrl: `${base}mysql.svg`, language: "MySQL" },
+  { iconUrl: `${base}mongodb.svg`, language: "MongoDb" },
+  { iconUrl: `${base}docker.svg`, language: "Docker" },
+  { iconUrl: `${base}figma.svg`, language: "Figma" },
 ];
 
 export default function PortfolioTabs() {
